@@ -9,17 +9,17 @@ Bonus points for anyone finding my typos, fixing them, and creating a pull reque
 
 In this assignment we will be getting comfortable with checking out repos, switching branches, creating branches and committing code. As well as creating issues.
 
-#### First - Create Issue
+### First - Create Issue
 
 Create an issue in this repo requesting access. I will demonstrate in class.
 
-#### Practice switch branches
+### Practice switch branches
 
 `git checkout <branchname>`
 `git checkout dev`
 `git checkout master`
 
-#### Create a branch with your name, based off of the DEV branch
+### Create a branch with your name, based off of the DEV branch
 
 `git checkout dev`
 
@@ -30,11 +30,11 @@ OR
 `git branch <yourname>`
 `git checkout <yourname>`
 
-#### Create a file named file.txt in the root of your branch
+### Create a file named file.txt in the root of your branch
 
 `touch file.txt`
 
-#### Stage your file to be committed
+### Stage your file to be committed
 
 `git add file.txt`
 
@@ -42,11 +42,11 @@ OR
 
 `git add -A`
 
-#### Commit your file to repo with a message
+### Commit your file to repo with a message
 
 `git commit -m "This is the message"`
 
-#### Finally push your branch up to the github repo
+### Finally push your branch up to the github repo
 
 `git push -u origin <mybranch>`
 
