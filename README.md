@@ -9,6 +9,12 @@ Bonus points for anyone finding my typos, fixing them, and creating a pull reque
 
 In this assignment we will be getting comfortable with checking out repos, switching branches, creating branches and committing code. As well as creating issues.
 
+### First - No really... Clone repo
+
+clone the repo:
+
+`git clone https://github.com/TylersDesk/dgm3760.git`
+
 ### First - Create Issue
 
 Create an issue in this repo requesting access. I will demonstrate in class.
