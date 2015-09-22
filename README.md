@@ -5,52 +5,30 @@ Repo for students to get comfortable with git and Node.js.
 
 Bonus points for anyone finding my typos, fixing them, and creating a pull request for them. Bonus points will only be giving via the pull request.
 
-## Exercise 1 - Git Basics
+## Exercise 2 - Git Merging & Node Modules
 
-In this assignment we will be getting comfortable with checking out repos, switching branches, creating branches and committing code. As well as creating issues.
+In this exercise we will talk about how to keep changes happening in the code base synced with your branch.
 
-#### First - Create Issue
+We will also talk about Node Modules. How they use a *module* object to *export* and expose functionality in Node applications.
 
-Create an issue in this repo requesting access. I will demonstrate in class.
+First thing is first. I have made added a few files to a branch and you will need to merge those changes into your branch to complete the exercise. 
 
-#### Practice switch branches
+You will be merging a branch into your personal branch.
 
-`git checkout <branchname>`
-`git checkout dev`
-`git checkout master`
+#### Remember - Current Branch is Destination of merge
 
-#### Create a branch with your name, based off of the DEV branch
+When you run the `git merge <branch|commit>` command whatever branch is your current working copy is the destination of the merge. 
 
-`git checkout dev`
+With that said, let's begin.
 
-`git checkout -b <yourname>`
+### Make sure you have YOUR branch checked out
 
-OR
+`git checkout <yourbranch>`
 
-`git branch <yourname>`
-`git checkout <yourname>`
+### Merge ex2 into your branch
 
-#### Create a file named file.txt in the root of your branch
+You are now ready to run the merge command. In this case I have a tag (a name given to a specific commit) that holds the files you will need to learn about node modules. So run the following command:
 
-`touch file.txt`
+`git merge ex2`
 
-#### Stage your file to be committed
-
-`git add file.txt`
-
-OR
-
-`git add -A`
-
-#### Commit your file to repo with a message
-
-`git commit -m "This is the message"`
-
-#### Finally push your branch up to the github repo
-
-`git push -u origin <mybranch>`
-
-
-
-
-
+### You should now have a folder named 'ClassSession-NodeModules'!
