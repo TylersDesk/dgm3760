@@ -1,0 +1,22 @@
+{
+  "name": "package-json-assignment",
+  "version": "1.0.0",
+  "description": "DGM 3760 Week 6 assignment",
+  "main": "fakefile.txt",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TylersDesk/dgm3760.git"
+  },
+  "keywords": [
+    "json"
+  ],
+  "author": "Braydon Powell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TylersDesk/dgm3760/issues"
+  },
+  "homepage": "https://github.com/TylersDesk/dgm3760#readme"
+}
