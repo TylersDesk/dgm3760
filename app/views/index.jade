@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  form
+  form(method="POST" action="/addstudent")
     h1 Poorly Designed Input
     input(type="text" name="fname" placeholder="First Name")
     br
@@ -9,4 +9,4 @@ block content
     br
     input(type="text" name="major" placeholder="Major")
     br
-    button(type="submit") Add Student
+    button#fire(type="submit") Add Student
