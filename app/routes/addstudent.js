@@ -5,13 +5,19 @@ var db = require('../fakedb');
 
 router.use(function(req,res,next) {
 	console.log('We are trying to add a student');
-	console.log(req.body);
+	console.log('REQ BODY>>>>', req.body);
+	console.log('REQ QUERY>>>>', req.query);
 	next();
 });
 
-/* GET home page. */
+/* POST home page. */
 router.post('/', function(req, res, next) {
-  res.render('students', { student: req.body });
+  res.json({ student: req.body });
+});
+
+/* GET */
+router.get('/', function(req, res, next) {
+  res.json({ student: req.query });
 });
 
 module.exports = router;

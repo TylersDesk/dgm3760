@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  form(method="POST" action="/addstudent")
+  form#addStudentForm(method="POST" action="/addstudent")
     h1 Poorly Designed Input
     input(type="text" name="fname" placeholder="First Name")
     br
