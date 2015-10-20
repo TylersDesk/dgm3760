@@ -1,10 +1,29 @@
 var express = require('express');
 var router = express.Router();
-var db = require('../fakedb');
+var mongoose = ('mongoose');
+var Cat = require('../models/cat');
 
 
 router.use(function(req,res,next) {
-	console.log(db.students);
+	var kitters = new Cat({
+		name: 'Kitters',
+		whiskers: 14,
+		stripes: false
+	});
+
+	kitters.speak();
+
+	console.log(kitters);
+
+	kitters.save( function(err, doc) {
+		if (err) {
+			console.log(err)
+		} else {
+			console.log('Document from database = ', doc);
+		}
+	});
+
+
 	next();
 });
 
